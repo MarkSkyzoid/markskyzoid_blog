@@ -1,0 +1,14 @@
+<!-- MermaidJS support -->
+
+<div class="mermaid">
+    {{.Inner}}
+</div>
+{{ if ($.Page.Params.mermaid) }}
+<!-- MermaidJS support -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.0/dist/mermaid.min.js"></script>
+<script>
+     mermaid.initialize({
+      theme: 'dark'
+    });
+</script>
+{{ end }}
